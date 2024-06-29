@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+:root{
+    --bg-color: #cbdcea;
+    --secont-bg-color:#100f0f;
+    --main-color: #c4628fc1;
+    --text-color: #0c0c0c;
+    --second-color: #0c0c0c;
+    --other-color: #0d0d0d;
+    --h1-font: 7rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+
+
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 11%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+.logo a{
+    width: 100%;
+    height: auto;
+    font-family: "Dosis", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+     background-color:#fff;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 42px;
+    color: var(--main-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 120px 19% 100px;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-text h3{
+    color: var(--second-color);
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px; 
+    word-spacing: 10px;
+}
+.hero-text h1{
+    font-family: "Dosis", sans-serif;
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    font-weight: 800px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.hero-text h4{
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600px;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease 2s;
+}
+.btn hover{
+    transform: translateX(5px);
+    background: #000;
+    border-bottom: 1px solid #4e5055;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.about-text h2{
+    font-family: "Dosis", sans-serif ;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+    
+}
+.about-text h5{
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+   
+}
+span{
+    color: var(--main-color);
+
+}
+.about-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    
+}
+h1{
+    text-align: center;
+}
+h3{
+    margin: 3px;
+}
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #0e0e0e;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) 0 1px 2px rgba(0, o, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, o, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg(236,0,140,1)0%, rgba(252,103,103,1)100%);
+
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.UI{
+    width: 80%;
+    animation: UI 3s;
+
+}
+.UX{
+    width: 60%;
+    animation: UX 3s;
+}
+.PHP{
+    width: 70%;
+    animation: PHP 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 55%;
+
+    }
+       
+    
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.project-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px var(--first-shadow);
+    overflow: hidden;
+
+}
+.project-box>i{
+    font-size: 50px;
+    color: #00B5E7;
+    margin-bottom: 25px;
+}
+.project-box label{
+    font-size: 15px;
+    color: #777;
+}
+.project-box::after{
+    content: "";
+    position: absolute;
+}
+.project-box:hover.project-box::after{
+    bottom: 0;
+}
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
+    color: var(--color-white);
+    z-index: 2;
+}
+.btn.btn2{
+    display:inline-block;
+    background: #f9f6f6;
+    background-position: center;
+}
+.contact-1{
+    flex-basis: 35%;
+}
+.contact-2{
+    flex-basis: 60%;
+}
+.conbtact-1p{
+    margin-top: 30px;
+
+}
+.contact-1 p i{
+    color: #ff004f;
+    margin-right:15px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}   
+.social icon{
+    margin-top: 50px;
+    background: #fff;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.social icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social icons a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+
+}
+.contact-2 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f0eeee;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form ,btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+   
+    
